@@ -4,19 +4,50 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="init();" style="background-image: url('images/background.png'); background-repeat: repeat">
 <header>
-<div id=logo><img src="images/HEAT_LOGO.png" height=80px width=85px></div>
-<div id=header-image1><img src="images/Heat.png" height=85px width=115px></div>
+<div id=logo><img src="images/HEAT_LOGO.png" height=78px width=90px></div>
+<div id=header-image1><img src="images/Heat.png" height=80px width=150px></div>
 <div id=header-image2><img src="images/fitness.png" height=30px width=85px></div>
 <div id=membership-text>MEMBERSHIP FORM</div>
-<header>
-<main>
-</main>
+</header>
+<div id="clearall"></div>
+
+<div id="div-inline">
+
+<article>
+<form action="form.html" method="GET">
+<fieldset><legend> <h1>Membership Form</h1></legend>
+<label for="fname">First name:</label><input id="fname" name="fname"type=text size="30"> <br>
+<label for="lname">Last name:</label><input id="lname" name ="lname"type=text size="30"> <br>
+<label for="age">Age:</label> <input name="age" id="age" type=number min="1" max="99" maxlength="2"> <br>
+<label for="male">Gender: </label>
+<input id="male" type=radio name="radio" value="Male" checked>Male <input id="female" type=radio name="radio" value="Female">Female<br>
+<label for="address">Address:</label><textarea placeholder="write address here.." rows="4" cols="30" name="address" id="address"></textarea> <br/>
+<label id="email">Email:</label> <input name="email" type=email id="email" size="30"> <br>
+<label id="mobile">Mobile: </label><input name="mobile" id="mobile" type=text size="30"> <br>
+<input type=Submit id="submit" value="Submit">
+</fieldset>
+</form>
+</article>
+
 <aside>
+<center>
+<br><span style="font-weight:bold"; font-size:"30px"> PHOTO :</span><br> 
+<canvas  id="myCanvas" width="220" height="200"></canvas><br>
+  <video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay ></video><br>
+
+<div id="div-inline">
+<button onclick="startWebcam();">Start WebCam</button>
+<button onclick="stopWebcam();">Stop WebCam</button>
+<button onclick="snapshot();">Take Snapshot</button>
+</div>
+</center>
 </aside>
-<footer>
-</footer>
+
+</div>
+
+<script src="web-cam.js"></script>
 </body>
 
 </html>
