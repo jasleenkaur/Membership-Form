@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel=stylesheet href=print.css>
+<link rel=stylesheet href="print.css">
 <script>
 function printing(el){
 var elemCont = document.getElementById(el).innerHTML;
@@ -12,10 +12,10 @@ document.body.innerHTML=restore;
 </script>
 </head>
 <body>
-<div id=container>
-<div id="header"><center><img src="images/logo.png" height=70 width=100><p>HDFC BUILDING, PHULLANWAL, PAKHOWAL ROAD, LUDHIANA. PHONE: 0161-2561956</p></center></div>
-<div id="photo"> <img src="images/logo.png" height=100 width=100></div><br>
-<div id=content> <br><br>
+<div id="container">
+<div id="header"><center><img src="images/logo.png" height=70 width=100><p>HDFC BUILDING, PHULLANWAL, PAKHOWAL ROAD,  LUDHIANA. PHONE: 0161-2561956</p></center></div>
+<div id="photo"> <img src=" " height=140 width=110></div><br>
+<div id=content style="margin-top:70px;"> <br><br>
 <strong>MEMBER INFORMATION</strong><br><br>
 
 Name.......................................... Father's Name.....................................................<br>
@@ -25,57 +25,27 @@ Age........................................ D.O.B...............................
 Joining On..................................... Valid till Date......................................<br>
 <br><br>
 <p></p><p>I hereby declare and confirm that the above information provided by me is totally correct and true in every respect. I have read and understood the Terms & Conditions and acknowledged that the fitness package & applicable fees are selected by my knowledge.</p>
-<div id=sign>(Signature of Applicant)</div>
-<div style="margin-top:100px;">
+<div id=sign>(Signature of Applicant)</div><br>
 <center>
-<table>
-	<caption>RENEWALS</caption>
-	    <th>Hero</th>
-        <th>Power</th>
-        <th>Nemesis</th>
-        <th>Hero</th>
-        <th>Power</th>
-        <th>Nemesis</th>
-      </tr>
-<tr>
-        <td>&nbsp;</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td></td>
-      </tr>
-    
-      <tr>
-        <td>Captain CSS</td>
-        <td>Superlayout</td>
-        <td>Lord Deprecated</td>
-        <td>Captain CSS</td>
-        <td>Superlayout</td>
-        <td>Lord Deprecated</td>
-      </tr>
-    
-      <tr>
-        <td>The XMLator</td>
-        <td>Standards compliance</td>
-        <td>Sloppy Code Boy</td>
-      </tr>
-    
-      <tr>
-        <td>Captain CSS</td>
-        <td>Superlayout</td>
-        <td>Lord Deprecated</td>
-      </tr>
-    
-      <tr>
-        <td>Browser Woman</td>
-        <td>Megacompatibility</td>
-        <td>Ugly Code Monster</td>
-      </tr>
+<div id="mytable" style="margin-top:100px;"></div>
+<br>
+<p>Thanks for visiting.</p> </center>
+</div>
+</div>
 
-</table>
-
-
-<center><button onClick="printing('container');">Print Me</button></center>
+<center><button onClick="printing('container');" style="margin-top:100px;">Print Me</button></center>
+<script>
+var table = document.createElement('table'), tr, td, row, cell;
+for (row = 0; row < 17; row++) {
+    tr = document.createElement('tr');
+    for (cell = 0; cell < 6; cell++) {
+        td = document.createElement('td');
+        tr.appendChild(td);
+        td.innerHTML = "&nbsp;";
+    }
+    table.appendChild(tr);
+}
+document.getElementById('mytable').appendChild(table);
+</script>
 </body>
 </html>
