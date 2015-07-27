@@ -27,7 +27,11 @@ Joining On..................................... Valid till Date.................
 <p></p><p>I hereby declare and confirm that the above information provided by me is totally correct and true in every respect. I have read and understood the Terms & Conditions and acknowledged that the fitness package & applicable fees are selected by my knowledge.</p>
 <div id=sign>(Signature of Applicant)</div><br>
 <center>
-<div id="mytable" style="margin-top:100px;"></div>
+<div style="margin-top:100px;"></div>
+<table id="mytable">
+<caption>RENEWALS</caption>
+<th>DATE FROM</th><th>DATE TO</th><th>RUPEES</th><th>RECEIVING DATE</th><th>FOLIO NO.</th><th>RECEIVING SIGNATURE</th>
+</table>
 <br>
 <p>Thanks for visiting.</p> </center>
 </div>
@@ -35,7 +39,8 @@ Joining On..................................... Valid till Date.................
 
 <center><button onClick="printing('container');" style="margin-top:100px;">Print Me</button></center>
 <script>
-var table = document.createElement('table'), tr, td, row, cell;
+var tr, td, row, cell;
+table=document.getElementById("mytable");   
 for (row = 0; row < 17; row++) {
     tr = document.createElement('tr');
     for (cell = 0; cell < 6; cell++) {
@@ -43,6 +48,7 @@ for (row = 0; row < 17; row++) {
         tr.appendChild(td);
         td.innerHTML = "&nbsp;";
     }
+    
     table.appendChild(tr);
 }
 document.getElementById('mytable').appendChild(table);
