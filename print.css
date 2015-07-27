@@ -12,9 +12,11 @@ overflow:visible;
 
 body{
 font-size: 16px;
-padding:4%;
 font-family:verdana, arial, sans-serif;f
 color:#000000;
+}
+#big-container{
+padding:4%;
 }
 #container{
 padding:3%;

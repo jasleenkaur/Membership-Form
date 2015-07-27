@@ -8,11 +8,9 @@
 
 <body onload="init();" style="background-image: url('images/background.png'); background-repeat: repeat">
 <header>
-<div id="div-inline">
 <div id=logo><img src="images/HEAT_LOGO.png" height=78px width=90px></div>
-<div id="header-image"><img src="images/heat.png" height=75px width=150px></div>
-<div id=membership-text>MEMBERSHIP FORM</div>
-</div>
+<div id=header-image1><img src="images/Heat.png" height=80px width=150px></div>
+<div id=header-image2><img src="images/fitness.png" height=30px width=85px></div>
 </header>
 <div id="clearall"></div>
 
@@ -20,17 +18,20 @@
 
 <article>
 <form action="form.html" method="GET">
-<fieldset><legend> <h1>Membership Form</h1></legend>
-<label for="fname">First name:</label><input id="fname" name="fname"type=text size="30"> <br>
-<label for="lname">Last name:</label><input id="lname" name ="lname"type=text size="30"> <br>
+<legend> <h1>Membership Form</h1></legend>
+<label for="fname">Name:</label><input id="fname" name="fname"type=text size="30"> <br>
+<label for="lname">Father's name:</label><input id="lname" name ="lname"type=text size="30"> <br>
 <label for="age">Age:</label> <input name="age" id="age" type=number min="1" max="99" maxlength="2"> <br>
-<label for="male">Gender: </label>
-<input id="male" type=radio name="radio" value="Male" checked>Male <input id="female" type=radio name="radio" value="Female">Female<br>
+<label for="male">Gender:</label>
+<select>
+  <option value="female">Female</option>
+  <option value="male">Male</option>
+</select>
+<br>
 <label for="address">Address:</label><textarea placeholder="write address here.." rows="4" cols="30" name="address" id="address"></textarea> <br/>
 <label id="email">Email:</label> <input name="email" type=email id="email" size="30"> <br>
 <label id="mobile">Mobile: </label><input name="mobile" id="mobile" type=text size="30"> <br>
 <input type=Submit id="submit" value="Submit">
-</fieldset>
 </form>
 </article>
 

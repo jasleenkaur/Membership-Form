@@ -1,6 +1,27 @@
 <html>
 <head>
+<title>HEAT FITNESS</title>
+<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ sizes="any">
+<meta http-equiv="Content-Type" Content="text/html;charset=utf-8"/> <meta content="utf-8" http-equiv="encoding">
+<link rel="stylesheet" href="style.css">
 <link rel=stylesheet href="print.css">
+<style>
+.common{
+padding:0;
+color:#000000;
+font-size:20px;
+}
+#tableBanner{
+margin-top:10%;
+border:2px solid #000000;
+}
+#printout{
+height:100%;
+width:80%;
+border:1px solid #000000;
+border-radius:10px;
+}
+</style>
 <script>
 function printing(el){
 var elemCont = document.getElementById(el).innerHTML;
@@ -11,7 +32,14 @@ document.body.innerHTML=restore;
 }
 </script>
 </head>
-<body>
+<body onload="processUser();">
+<header>
+<div id=logo><img src="images/HEAT_LOGO.png" height=78px width=90px></div>
+<div id=header-image1><img src="images/Heat.png" height=80px width=150px></div>
+<div id=header-image2><img src="images/fitness.png" height=30px width=85px></div>
+</header>
+<br>
+<div id="big-container">
 <div id="container">
 <div id="header"><center><img src="images/logo.png" height=70 width=100><p>HDFC BUILDING, PHULLANWAL, PAKHOWAL ROAD,  LUDHIANA. PHONE: 0161-2561956</p></center></div>
 <div id="photo"> <img src=" " height=140 width=110></div><br>
@@ -36,8 +64,8 @@ Joining On..................................... Valid till Date.................
 <p>Thanks for visiting.</p> </center>
 </div>
 </div>
-
-<center><button onClick="printing('container');" style="margin-top:100px;">Print Me</button></center>
+</div>
+<center><button onClick="printing('container');" style="margin-top:20px; margin-bottom:60px;">Print Me</button></center>
 <script>
 var tr, td, row, cell;
 table=document.getElementById("mytable");   
@@ -53,5 +81,6 @@ for (row = 0; row < 15; row++) {
 }
 document.getElementById('mytable').appendChild(table);
 </script>
+<script src="process.js"></script>
 </body>
 </html>
