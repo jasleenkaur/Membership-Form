@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel=stylesheet href=print.css>
+<script>
+function printing(el){
+var elemCont = document.getElementById(el).innerHTML;
+var restore = document.body.innerHTML;
+document.body.innerHTML=elemCont;
+window.print();
+document.body.innerHTML=restore;
+}
+</script>
+</head>
+<body>
+<div id=container>
+<div id="header"><center><img src="images/logo.png" height=70 width=100><p>HDFC BUILDING, PHULLANWAL, PAKHOWAL ROAD, LUDHIANA. PHONE: 0161-2561956</p></center></div>
+<div id="photo"> <img src="images/logo.png" height=100 width=100></div><br>
+<div id=content> <br><br>
+<strong>MEMBER INFORMATION</strong><br><br>
+
+Name.......................................... Father's Name.....................................................<br>
+Address (Resi.).................................................................................................................<br>
+Tel(Resi.).....................................  E-mail............................................................<br>
+Age........................................ D.O.B.............................................<br>
+Joining On..................................... Valid till Date......................................<br>
+<br><br>
+<p></p><p>I hereby declare and confirm that the above information provided by me is totally correct and true in every respect. I have read and understood the Terms & Conditions and acknowledged that the fitness package & applicable fees are selected by my knowledge.</p>
+<div id=sign>(Signature of Applicant)</div>
+<div style="margin-top:100px;">
+<center>
+<table>
+	<caption>RENEWALS</caption>
+	    <th>Hero</th>
+        <th>Power</th>
+        <th>Nemesis</th>
+        <th>Hero</th>
+        <th>Power</th>
+        <th>Nemesis</th>
+      </tr>
+<tr>
+        <td>&nbsp;</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td></td>
+      </tr>
+    
+      <tr>
+        <td>Captain CSS</td>
+        <td>Superlayout</td>
+        <td>Lord Deprecated</td>
+        <td>Captain CSS</td>
+        <td>Superlayout</td>
+        <td>Lord Deprecated</td>
+      </tr>
+    
+      <tr>
+        <td>The XMLator</td>
+        <td>Standards compliance</td>
+        <td>Sloppy Code Boy</td>
+      </tr>
+    
+      <tr>
+        <td>Captain CSS</td>
+        <td>Superlayout</td>
+        <td>Lord Deprecated</td>
+      </tr>
+    
+      <tr>
+        <td>Browser Woman</td>
+        <td>Megacompatibility</td>
+        <td>Ugly Code Monster</td>
+      </tr>
+
+</table>
+
+
+<center><button onClick="printing('container');">Print Me</button></center>
+</body>
+</html>
