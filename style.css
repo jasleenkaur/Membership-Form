@@ -1,6 +1,7 @@
 html{
 height:100%;
 width:100%;
+overflow:scroll;
 }
 *{
 padding:0px;
@@ -22,23 +23,27 @@ float:left;
 margin-left:2%;
 }
 
+#clearall{
+clear:both;
+}
+
 #header-image2{
 float:left;
 margin-left:0px;
 margin-top:3.5%;
 }
 
-#clearall{
-clear:both;
-}
+
 #div-inline{
 display:inline;
 }
 article{
-padding:0px;
 float:left;
 height:100%;
 width:70%;
+}
+#inner-article{
+padding:4%;
 }
 
 aside{
@@ -54,30 +59,12 @@ margin-top:20px;
 border:1px solid #000000 ;
 }
 #submit{
-margin-top:20%;
-background-color:rgba(128,255,0,0.8);
+margin-top:15%;
+float:right;
+background-color:rgb(0,220,20);
 border-radius:10px;
-padding:20px;
+width:150px;
+height:50px;
 font-size:20px;
 color:#000000;
-}
-label{
-float:left;
-}
-input number radio{
-float:right;
-}
-#submit{
-float:right;
-}
-fieldset{
-padding:40px;
-border-radius:30px;
-border:1px solid #000000 ;
-}
-form{
-background-color:pink;
-padding:40px;
-height: 100%;
-width:80%;
 }

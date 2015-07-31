@@ -4,6 +4,7 @@
 <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ sizes="any">
 <meta http-equiv="Content-Type" Content="text/html;charset=utf-8"/> <meta content="utf-8" http-equiv="encoding">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="form.css">
 </head>
 
 <body onload="init();" style="background-image: url('images/background.png'); background-repeat: repeat">
@@ -14,33 +15,44 @@
 </header>
 <div id="clearall"></div>
 
-<div id="div-inline">
-
 <article>
-<form action="form.html" method="GET">
-<legend> <h1>Membership Form</h1></legend>
-<label for="fname">Name:</label><input id="fname" name="fname"type=text size="30"> <br>
-<label for="lname">Father's name:</label><input id="lname" name ="lname"type=text size="30"> <br>
-<label for="age">Age:</label> <input name="age" id="age" type=number min="1" max="99" maxlength="2"> <br>
-<label for="male">Gender:</label>
-<select>
-  <option value="female">Female</option>
-  <option value="male">Male</option>
-</select>
-<br>
-<label for="address">Address:</label><textarea placeholder="write address here.." rows="4" cols="30" name="address" id="address"></textarea> <br/>
-<label id="email">Email:</label> <input name="email" type=email id="email" size="30"> <br>
-<label id="mobile">Mobile: </label><input name="mobile" id="mobile" type=text size="30"> <br>
-<input type=Submit id="submit" value="Submit">
+<div id=inner-article>
+<form action="" method="post" class="elegant-aero">
+    <h1>Contact Form 
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Your Name :</span>
+        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+    </label>
+    
+    <label>
+        <span>Your Email :</span>
+        <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+    </label>
+    
+    <label>
+        <span>Message :</span>
+        <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+    </label> 
+     <label>
+        <span>Subject :</span><select name="selection">
+        <option value="Job Inquiry">Job Inquiry</option>
+        <option value="General Question">General Question</option>
+        </select>
+    </label>    
 </form>
+<br>
+    <input type="submit" id="submit" value="Send" />    
+</div>
 </article>
+
 
 <aside>
 <center>
 <br><span style="font-weight:bold"; font-size:"30px"> PHOTO :</span><br> 
-<canvas  id="myCanvas" width="220" height="200"></canvas><br>
+<canvas  id="myCanvas" width="160" height="150"></canvas><br>
   <video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay ></video><br>
-
 <div id="div-inline">
 <button onclick="startWebcam();">Start WebCam</button>
 <button onclick="stopWebcam();">Stop WebCam</button>
@@ -49,9 +61,8 @@
 </center>
 </aside>
 
-</div>
+
 
 <script src="web-cam.js"></script>
 </body>
-
 </html>
