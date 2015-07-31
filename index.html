@@ -5,10 +5,17 @@
 <meta http-equiv="Content-Type" Content="text/html;charset=utf-8"/> <meta content="utf-8" http-equiv="encoding">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="form.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
-
-<body onload="init();" style="background-image: url('images/background.png'); background-repeat: repeat">
+<!TODO:
+1)WEBCAM BUTTON css change
+2)form css improve
+3)download pdf on a folder
+4)download images on a folder with the naem of person's name
+>
+<body onload="init();" style="background-image: url('images/background.png'); background-repeat: repeat" onload="date();">
 <header>
+
 <div id=logo><img src="images/HEAT_LOGO.png" height=78px width=90px></div>
 <div id=header-image1><img src="images/Heat.png" height=80px width=150px></div>
 <div id=header-image2><img src="images/fitness.png" height=30px width=85px></div>
@@ -17,34 +24,46 @@
 
 <article>
 <div id=inner-article>
-<form action="" method="post" class="elegant-aero">
-    <h1>Contact Form 
-        <span>Please fill all the texts in the fields.</span>
+<form action="" method="post" class="elegant-aero" >
+    <h1>Membership Form 
+        
     </h1>
     <label>
-        <span>Your Name :</span>
+        <span>Name :</span>
+        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+    </label>
+<label>
+        <span>Father's Name :</span>
         <input id="name" type="text" name="name" placeholder="Your Full Name" />
     </label>
     
     <label>
-        <span>Your Email :</span>
+        <span>Email :</span>
         <input id="email" type="email" name="email" placeholder="Valid Email Address" />
     </label>
     
     <label>
-        <span>Message :</span>
-        <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+        <span>Address :</span>
+        <textarea id="Address" name="address" placeholder="Your Address"></textarea>
     </label> 
-     <label>
-        <span>Subject :</span><select name="selection">
-        <option value="Job Inquiry">Job Inquiry</option>
-        <option value="General Question">General Question</option>
+     
+<label>
+        <span>Gender:</span><select name="selection">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
         </select>
-    </label>    
+    </label>   
+<label>
+        <span>Age :</span>
+        <input type=number id="Age" name="age" placeholder="age" min=1 max=100></textarea>
+    </label>  
+<label>
+        <span>date</span>
+        <input type=date id="datePicker" name="date" ></textarea>
+    </label>  
 </form>
-<br>
-    <input type="submit" id="submit" value="Send" />    
 </div>
+
 </article>
 
 
@@ -59,10 +78,24 @@
 <button onclick="snapshot();">Take Snapshot</button>
 </div>
 </center>
+<br>
+    <input type="submit" id="submit" value="Send" />    
 </aside>
 
 
 
 <script src="web-cam.js"></script>
+<script>
+function date(){
+var now = new Date();
+
+var day = ("0" + now.getDate()).slice(-2);
+var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+$('#datePicker').val(today);
+}
+</script>
 </body>
 </html>

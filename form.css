@@ -39,7 +39,7 @@
     margin-top: 10px;
     font-weight: bold;
 }
-.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
+.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select, .elegant-aero [type="number"], .elegant-aero [type="date"] {
     color: #888;
     width: 70%;
     padding: 0px 0px 0px 5px;
@@ -51,7 +51,7 @@
     font: 200 12px/25px Arial, Helvetica, sans-serif;
     height: 30px;
     line-height:15px;
-    margin: 2px 6px 16px 0px;
+    margin: 2px 2px 16px 0px;
     display:inline;
 }
 .elegant-aero textarea{
