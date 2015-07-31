@@ -6,12 +6,13 @@ overflow:scroll;
 *{
 padding:0px;
 margin:0px;
-overflow:hidden;
+overflow:visible;
 }
 header{
 height:12%;
 width:100%;
 background-color:#000000;
+border-bottom:7px solid #000000;
 }
 #logo{
 float:left;
