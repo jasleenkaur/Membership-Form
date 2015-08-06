@@ -69,9 +69,11 @@ border:1px solid #000000;
 
 }
 
-#photo{
+#photo {
 float:right;
 border: 1px solid #000000;
+height:auto;
+width:auto;
 }
 strong{
 font-size:16px;

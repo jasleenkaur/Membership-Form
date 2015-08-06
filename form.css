@@ -2,7 +2,7 @@
 .elegant-aero {
     margin-left:auto;
     margin-right:auto;
-
+    box-shadow: 10px 10px 5px #888888;
     max-width: 500px;
     background: #d3d3d3;
     padding: 20px 20px 20px 20px;
@@ -59,16 +59,7 @@
     padding: 5px 0px 0px 5px;
     width: 70%;
 }
-.elegant-aero select {
-    background: #fbfbfb url('down-arrow.png') no-repeat right;
-    background: #fbfbfb url('down-arrow.png') no-repeat right;
-   appearance:none;
-    -webkit-appearance:none; 
-   -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 70%;
-}
+
 .elegant-aero .button{
     padding: 10px 30px 10px 30px;
     background: #66C1E4;

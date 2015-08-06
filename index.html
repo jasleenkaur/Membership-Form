@@ -13,9 +13,10 @@
 3)download pdf on a folder
 4)download images on a folder with the naem of person's name
 5)**adding modernizer~ date polyfill for firefox
-6)adding jquery locally from google
->
+6)adding jquery locally from google>
+
 <body onload="init();" style="background-image: url('images/background.png'); background-repeat: repeat" onload="date();">
+<!body onload="init();" style="background-color:#B0C0E0" onload="date();">
 <header>
 <div id=logo><img src="images/HEAT_LOGO.png" height=78px width=90px></div>
 <div id=header-image1><img src="images/Heat.png" height=80px width=150px></div>
@@ -25,7 +26,7 @@
 
 <article>
 <div id=inner-article>
-<form action="" method="post" class="elegant-aero" >
+<form action="print.html" method="Get" class="elegant-aero" >
     <h1>Membership Form 
         
     </h1>
@@ -35,7 +36,7 @@
     </label>
 <label>
         <span>Father's Name :</span>
-        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+        <input id="fname" type="text" name="fname" placeholder="Your Full Name" />
     </label>
     
     <label>
@@ -61,7 +62,8 @@
 <label>
         <span>Joining Date :</span>
         <input type=date id="datePicker" name="date" ></textarea>
-    </label>  
+    </label> 
+<input type="Submit" id="Submit" value="Submit"> 
 </form>
 </div>
 
@@ -80,7 +82,7 @@
 </div>
 </center>
 <br>
-    <input type="submit" id="submit" value="Send" />    
+ 
 </aside>
 
 

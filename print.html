@@ -8,12 +8,9 @@
 <style>
 .common{
 padding:0;
-color:#000000;
-font-size:20px;
-}
-#tableBanner{
-margin-top:10%;
-border:2px solid #000000;
+display:inline;
+margin-left:15px;
+margin-right:5%;
 }
 #printout{
 height:100%;
@@ -42,15 +39,15 @@ document.body.innerHTML=restore;
 <div id="big-container">
 <div id="container">
 <div id="header"><center><img src="images/logo.png" height=70 width=100><p>HDFC BUILDING, PHULLANWAL, PAKHOWAL ROAD,  LUDHIANA. PHONE: 0161-2561956</p></center></div>
-<div id="photo"> <img src=" " height=140 width=110></div><br>
+<div id="photo"> <img src="" id="tableBanner"></div><br>
 <div id=content style="margin-top:70px;"> <br><br>
 <strong>MEMBER INFORMATION</strong><br><br>
 
-Name.......................................... Father's Name.....................................................<br>
-Address (Resi.).................................................................................................................<br>
-Tel(Resi.).....................................  E-mail............................................................<br>
-Age........................................ D.O.B.............................................<br>
-Joining On..................................... Valid till Date......................................<br>
+Name<div id="name" class="common"></div>Father's Name<div id="fname" class="common"></div><br>
+Address (Resi.)<div id="address" class="common"></div><br>
+Mobile<div id="mobile" class="common"></div>  E-mail<div id="email" class="common"></div><br>
+Age<div id="age" class="common"></div> D.O.B<div id="dob" class="common"></div><br>
+Joining On<div id="joining" class="common"></div> Valid till Date<div id="valid" class="common"></div><br>
 <br><br>
 <p></p><p>I hereby declare and confirm that the above information provided by me is totally correct and true in every respect. I have read and understood the Terms & Conditions and acknowledged that the fitness package & applicable fees are selected by my knowledge.</p>
 <div id=sign>(Signature of Applicant)</div><br>
@@ -79,7 +76,7 @@ for (row = 0; row < 15; row++) {
     
     table.appendChild(tr);
 }
-document.getElementById('mytable').appendChild(table);
+//document.getElementById('mytable').appendChild(table);
 </script>
 <script src="process.js"></script>
 </body>
